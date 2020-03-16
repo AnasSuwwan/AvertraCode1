@@ -1,0 +1,284 @@
+	body
+			{
+				background-color: #313842;
+				font-family: Audiowide;
+			}
+		nav
+			{
+				background-color: #36404c;
+			}
+		nav ul
+			{
+			    padding: 20px 0px 0 20px;
+				list-style: none;
+			}
+		.title
+		 	{  
+		 	  margin-block-end: -0.7em;
+		 	}
+		
+        .icons:hover
+            {
+
+                background-color:transparent; ;
+                color: blue;
+                border-radius: 50% ;
+                display: flex;
+              }
+		.icon
+			{
+				display: flex; 
+
+			}
+		img
+			{
+				width: 50px;
+				height: 50px;
+				border-radius: 10px;
+
+			}
+
+			/*//////////////////////////Left Nave /////////////////////////////////////////*/
+		.leftNav
+			{
+				height: 520px;
+				width: 100%; 
+				background-color:#36404c;	   
+				display:inline-block  ;
+			}
+		.n1 ,.n2 ,.n3 ,.n4
+			{
+				margin-top : 40px;
+			}
+		.n1 :hover{  background-color: #1d636d;  border-left: solid; border-color:  #00b8e6}
+		.n2 :hover{  background-color: #1d636d; border-left: solid;border-color:  #00b8e6 }
+		.n3 :hover{  background-color: #1d636d; border-left: solid;border-color:  #00b8e6 }
+		.n4 :hover{  background-color: #1d636d;border-left: solid; border-color:  #00b8e6 }
+
+
+		.pra
+			{
+				text-align: -webkit-center;
+				padding: 20px  0;
+			}
+		/*////////////////////////////////Bar Chart///////////////////////////////////*/
+				#chartdiv
+					{
+					border-radius: 10px;
+					background-color: #36404c;
+					margin: 15px 0 0 50px;
+					padding-bottom: 70px;
+ 					height: 300px;
+ 					width: 90%;
+					}
+				/*//////////////////////////////Pie Chart/////////////////////////////////////*/
+		
+			.PieChart
+				{	border-radius: 10px;
+					background-color: #36404c;
+					padding:0 0 37px 12px;
+				}
+				.pie
+					{
+					width: 100px;
+					height: 150px;
+					border-radius: 50%;
+  					background: conic-gradient(  #99ff33 0 65%, #069ada 0);
+					}
+				#content1 
+					{
+				    position: relative;
+   					top: 80px;
+    				left: 90px;
+;
+					}
+				#content2
+				    {
+		    		position: relative;
+   					top: 38px;
+   					right: 20px;
+   					}
+
+			.int 		{
+						position: relative; 
+						left: 175px;
+					}
+		pre  		
+					{
+						line-height: 10px;
+						overflow: hidden;
+					}
+		.sm-pie1	
+					{
+						width: 20PX;
+						height: 20px ;
+						background-color: #99ff33 ; 
+						display: inline-block;
+					}
+		.sm-pie2
+					{
+						width: 20PX;
+						height: 20px ;
+						background-color: #069ada ; 
+						display: inline-block;
+					}
+/* form starting stylings ------------------------------- */
+		.group
+			{ 
+	  			position:relative; 
+	 			margin-bottom:40px; 
+			}
+		input 		
+			{
+			  font-size:18px;
+			  background-color: transparent;
+			  padding:10px 10px 10px 5px;
+			  display:block;
+			  width:90%;
+			  border:none;
+			  border-bottom:1px solid #757575;
+			}
+		.input1 	
+			{
+			  font-size:18px;
+			  background-color: transparent;
+			  padding:10px 10px 10px 5px;
+			  display:block;
+			  width:100px;
+			  border:none;
+			  border-bottom:1px solid #757575;
+			}
+		input:focus 		{ outline:none; }
+
+		/* LABEL ======================================= */
+		label 	
+			{
+			  color:#999; 
+			  font-size:18px;
+			  font-weight:normal;
+			  position:absolute;
+			  pointer-events:none;
+			  left:5px;
+			  top:10px;
+			  transition:0.2s ease all; 
+			  -moz-transition:0.2s ease all; 
+			  -webkit-transition:0.2s ease all;
+			}
+
+
+		/* active state */
+		input:focus ~ label, input:valid ~ label 	
+			{
+			  top:-5px;
+			  font-size:20px;
+			  color:#5264AE;
+			}
+
+
+			/* HIGHLIGHTER ================================== */
+			.highlight {
+						  position:absolute;
+						  height:60%; 
+						  width:100px; 
+						  top:25%; 
+						  left:0;
+						  pointer-events:none;
+						  opacity:0.5;
+						}
+			.cal
+						{
+							margin-left: 35px; 
+							font-size: 15px
+						}
+			.cal1
+						{
+							margin-left: 55px;
+							font-size: 15px;
+						}
+			.button1	
+						{
+								width: 200px;
+								height: 40px ; 
+								border-radius: 4px ;
+								margin-bottom: 7px;
+								background-color: #40f8f6; 
+								border-style: none;
+								
+
+						}
+					.button2	
+						{
+					margin-top: 5px;
+					width: 200px;
+					height: 40px ; 
+					border-radius: 4px ;
+					background-color: #069ada; 
+					border-style: none;
+				   
+
+			}
+
+		button span
+			{
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+
+		button span:after 
+			{
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.5s;
+			}
+
+		button:hover span
+			{
+		  padding-right: 25px;
+			}
+
+		button:hover span:after
+			 {
+			  opacity: 1;
+			  right: 0;
+			}
+
+	/*//////////////////////////////for Table////////////////////////////*/
+		table
+			{
+				width: 90%;
+				margin-top: 10px;
+
+			}
+	
+		th 	
+			{
+				text-align: center;
+				padding: 10px 0;
+				background-color: #ff9900;
+
+			}
+
+		td  
+			{
+				padding :8px; 
+				background-color:#4d4d4d ;
+				text-align: center; 
+				}
+	
+		.forTable	
+				{
+
+					margin-top: 10px;
+					width: 90% ;
+				}
+		.white
+		 		{
+					color: white
+				}
+
+		
